@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_160sdp"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_12sdp"
+    android:background="@drawable/dialog_shape">
+
+
+    <TextView
+        android:id="@+id/logouttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_15sdp"
+        android:text="Do You Want to Log Out ?"
+        android:textStyle="bold"
+        android:textSize="@dimen/_25sdp" />
+
+    <LinearLayout
+        android:layout_below="@id/logouttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/yesbuttonlogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/signin_shape"
+            android:gravity="center"
+            android:padding="@dimen/_3sdp"
+            android:text="Yes"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25sdp" />
+
+        <TextView
+            android:id="@+id/nobuttonlogout"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_3sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="No"
+            android:textSize="@dimen/_25sdp"
+            android:background="@drawable/signin_shape"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
